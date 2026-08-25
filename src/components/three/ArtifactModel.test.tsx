@@ -1,5 +1,5 @@
 import { cleanup, render, waitFor } from "@testing-library/react";
-import { BoxGeometry, Mesh, MeshStandardMaterial, Scene } from "three";
+import { Box3, BoxGeometry, Mesh, MeshStandardMaterial, Scene } from "three";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { ArtifactModel } from "./ArtifactModel";
@@ -56,9 +56,39 @@ describe("ArtifactModel", () => {
     expect(clonedScene.rotation.x).toBeCloseTo(0.1);
     expect(clonedScene.rotation.y).toBeCloseTo(0.2);
     expect(clonedScene.rotation.z).toBeCloseTo(0.3);
-    expect(clonedScene.scale.toArray()).toEqual([1.1, 1.2, 1.3]);
+    expect(clonedScene.scale.toArray()).toEqual([2.2, 2.4, 2.6]);
     expect(modelMocks.preload).not.toHaveBeenCalled();
     await waitFor(() => expect(onReady).toHaveBeenCalledTimes(1));
+  });
+
+  it("centers the loaded geometry at the viewer origin and gives it a readable display height", () => {
+    const scene = new Scene();
+    const mesh = new Mesh(new BoxGeometry(1, 1, 1), new MeshStandardMaterial());
+    mesh.position.set(0, 1.5, 0);
+    scene.add(mesh);
+    const clone = vi.spyOn(scene, "clone");
+    modelMocks.useGLTF.mockReturnValue({ scene });
+
+    render(
+      <ArtifactModel
+        src="/models/zunpan.glb"
+        transform={{
+          position: [0, 0, 0],
+          rotation: [0, 0, 0],
+          scale: [1, 1, 1],
+        }}
+      />,
+    );
+
+    const clonedScene = clone.mock.results[0]?.value as Scene | undefined;
+    expect(clonedScene).toBeDefined();
+    if (!clonedScene) {
+      throw new Error("Expected the model scene to be cloned");
+    }
+
+    const bounds = new Box3().setFromObject(clonedScene);
+    expect(bounds.min.y).toBeCloseTo(-1);
+    expect(bounds.max.y).toBeCloseTo(1);
   });
 
   it("preserves shared model resources without cloning or disposing them", () => {

@@ -44,14 +44,14 @@ export const zunpanExhibition = {
     minDistance: 3.4,
     maxDistance: 11,
     defaultCamera: {
-      position: [0, 1.6, 6.8],
-      target: [0, 0.55, 0],
+      position: [0, 0.05, 5.5],
+      target: [0, 0, 0],
       fov: 38,
     },
     transform: {
-      position: [0, -1.05, 0],
-      rotation: [0, -0.32, 0],
-      scale: [1.1, 1.1, 1.1],
+      position: [0, 0, 0],
+      rotation: [0, 0, 0],
+      scale: [1, 1, 1],
     },
   },
   interpretationNotice:
@@ -62,10 +62,10 @@ export const zunpanExhibition = {
       title: "尊口镂空纹饰",
       description:
         "尊口装饰由多层相互缠绕的蟠螭纹组成，构件细密复杂，形成强烈的空间层次和视觉张力。",
-      position: [0, 1.55, 0.3],
+      position: [0, 0.86, 0.24],
       camera: {
-        position: [3.2, 2.1, 4.4],
-        target: [0, 1.4, 0],
+        position: [2.5, 1.35, 4.5],
+        target: [0, 0.75, 0],
         fov: 34,
       },
     },
@@ -74,10 +74,10 @@ export const zunpanExhibition = {
       title: "尊体蟠螭结构",
       description:
         "大量龙蛇形纹饰彼此穿插、衔接和盘绕，体现了战国青铜装饰由平面纹样向立体雕塑发展的趋势。",
-      position: [0.86, 0.72, 0.15],
+      position: [0.7, 0.17, 0.32],
       camera: {
-        position: [3.7, 1.4, 3.8],
-        target: [0.5, 0.7, 0],
+        position: [2.8, 0.6, 4.35],
+        target: [0.35, 0.16, 0],
         fov: 32,
       },
     },
@@ -86,10 +86,10 @@ export const zunpanExhibition = {
       title: "盘体承托结构",
       description:
         "尊与盘既可组合使用，也具有相对独立的造型结构，体现了礼器功能与审美表达的统一。",
-      position: [-0.9, -0.35, 0.4],
+      position: [-0.66, -0.65, 0.34],
       camera: {
-        position: [-3.6, 0.7, 4],
-        target: [-0.45, -0.35, 0],
+        position: [-2.8, -0.42, 4.4],
+        target: [-0.32, -0.6, 0],
         fov: 33,
       },
     },

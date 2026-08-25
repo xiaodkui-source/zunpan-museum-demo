@@ -219,7 +219,7 @@ export function ArtifactViewer({ exhibition }: ArtifactViewerProps) {
         onCreated={({ gl }) => {
           gl.setClearColor(0x000000, 0);
           gl.toneMapping = ACESFilmicToneMapping;
-          gl.toneMappingExposure = 0.88;
+          gl.toneMappingExposure = 1.04;
           gl.outputColorSpace = SRGBColorSpace;
         }}
       >

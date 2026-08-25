@@ -78,23 +78,33 @@ export function ArtifactScene({
 
   return (
     <>
-      <ambientLight intensity={0.34} color="#d8c7a6" />
+      <ambientLight intensity={0.52} color="#ddcda9" />
+      <hemisphereLight
+        color="#e6c586"
+        groundColor="#0b2922"
+        intensity={0.68}
+      />
       <directionalLight
         castShadow={shadows}
-        color="#d5a667"
-        intensity={2.1}
-        position={[4.8, 5.7, 4.2]}
+        color="#e5b36a"
+        intensity={3}
+        position={[4.4, 5.3, 5.6]}
         shadow-mapSize-width={shadows ? 1024 : 256}
         shadow-mapSize-height={shadows ? 1024 : 256}
       />
+      <directionalLight
+        color="#6cb7a1"
+        intensity={1.15}
+        position={[-4.5, 2.8, 3.8]}
+      />
       <spotLight
         color="#4e8579"
-        intensity={1.85}
+        intensity={1.45}
         angle={0.62}
         penumbra={0.82}
-        position={[-4.2, 3.2, -2.2]}
+        position={[-3.8, 3.6, -2.6]}
       />
-      <pointLight color="#e7ddc8" intensity={0.72} position={[-2.2, 1.4, 3.4]} />
+      <pointLight color="#f0dcc0" intensity={1.15} position={[-1.6, 1.8, 3.6]} />
 
       <mesh position={[0, 0.25, -3.4]} scale={[1.25, 1.25, 1]}>
         <circleGeometry args={[3.2, 64]} />
@@ -145,7 +155,7 @@ export function ArtifactScene({
 
       {shadows && !lowQuality && !reducedMotion ? (
         <ContactShadows
-          position={[0, -2.1, 0]}
+          position={[0, -1.1, 0]}
           opacity={0.3}
           scale={7}
           blur={2.7}
@@ -168,6 +178,7 @@ export function ArtifactScene({
         maxDistance={model.maxDistance}
         autoRotate={shouldAutoRotate(autoRotate, reducedMotion, renderActive)}
         autoRotateSpeed={0.45}
+        target={mutableTuple(model.defaultCamera.target)}
         onStart={onPauseAutoRotate}
         onChange={() => invalidate()}
       />
