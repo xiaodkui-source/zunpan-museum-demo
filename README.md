@@ -82,3 +82,5 @@ export default defineConfig({
 ## 技术栈
 
 React、TypeScript、Vite、React Three Fiber、Drei、Three.js、GSAP、CSS Modules、Lucide、Vitest 与 Playwright。
+
+GitHub + Vercel 自动部署测试
