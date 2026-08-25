@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="panchi-title panchi-desc">
+  <title id="panchi-title">蟠螭纹 · 数字纹样示意</title>
+  <desc id="panchi-desc">以双向回旋的 S 曲线、交叠带与重复兽首节点构成的本地数字线稿研究图。</desc>
+  <defs>
+    <linearGradient id="panchi-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06110f"/>
+      <stop offset="0.55" stop-color="#0b1b18"/>
+      <stop offset="1" stop-color="#071310"/>
+    </linearGradient>
+    <linearGradient id="panchi-bronze" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6d5a38"/>
+      <stop offset="0.25" stop-color="#c8a76c"/>
+      <stop offset="0.52" stop-color="#6f9b87"/>
+      <stop offset="0.78" stop-color="#d5b978"/>
+      <stop offset="1" stop-color="#675033"/>
+    </linearGradient>
+    <radialGradient id="panchi-node" cx="38%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#d3b879"/>
+      <stop offset="0.45" stop-color="#729587"/>
+      <stop offset="1" stop-color="#213e37"/>
+    </radialGradient>
+    <pattern id="panchi-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#b79a6424" stroke-width="1"/>
+      <path d="M40 0V80M0 40H80" fill="none" stroke="#4e857918" stroke-width="1"/>
+    </pattern>
+    <g id="panchi-head">
+      <path d="M-42 4C-38-30-12-48 20-40C42-34 51-11 42 10C35 28 16 40-7 38C-28 36-45 24-42 4Z" fill="url(#panchi-node)" stroke="#d0b173" stroke-width="4"/>
+      <path d="M-24-17C-13-32 12-32 27-18C11-17-3-9-11 2C-20-2-25-9-24-17Z" fill="#0a1714" stroke="#9a7d4d" stroke-width="3"/>
+      <path d="M-7 7C4-3 17-3 30 4C20 20 5 27-12 22Z" fill="none" stroke="#d3b978" stroke-width="4"/>
+      <circle cx="20" cy="-14" r="5" fill="#06110f" stroke="#e0c783" stroke-width="3"/>
+      <path d="M-31-21L-50-35M-23-29L-31-48M34-17L54-29" fill="none" stroke="#77a091" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#panchi-bg)"/>
+  <rect width="1600" height="1000" fill="url(#panchi-grid)"/>
+  <path d="M0 112H1600M0 916H1600" stroke="#a7834d55" stroke-width="2"/>
+  <text x="86" y="72" fill="#e3d4b7" font-family="serif" font-size="34" letter-spacing="5">蟠螭纹 · 数字纹样示意</text>
+  <text x="1514" y="72" fill="#6f998b" font-family="sans-serif" font-size="16" text-anchor="end" letter-spacing="3">回旋 / 交叠 / 双向组织</text>
+
+  <g fill="none">
+    <rect x="72" y="142" width="1456" height="714" stroke="#c3a36888" stroke-width="2"/>
+    <rect x="91" y="161" width="1418" height="676" stroke="#4e857966" stroke-width="2"/>
+    <path d="M108 182H1492M108 816H1492" stroke="#c7a66a55"/>
+    <path d="M800 178V820" stroke="#4e85793f" stroke-dasharray="10 16"/>
+    <path d="M274 178V820M536 178V820M1064 178V820M1326 178V820" stroke="#a8834d24" stroke-dasharray="4 14"/>
+  </g>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M122 360C211 217 347 220 424 337C489 436 562 437 632 338C713 223 852 221 926 340C990 443 1068 444 1144 342C1226 232 1362 230 1482 354" fill="none" stroke="#07100f" stroke-width="42"/>
+    <path d="M122 360C211 217 347 220 424 337C489 436 562 437 632 338C713 223 852 221 926 340C990 443 1068 444 1144 342C1226 232 1362 230 1482 354" fill="none" stroke="url(#panchi-bronze)" stroke-width="24"/>
+    <path d="M122 360C211 217 347 220 424 337C489 436 562 437 632 338C713 223 852 221 926 340C990 443 1068 444 1144 342C1226 232 1362 230 1482 354" fill="none" stroke="#e5cb8c88" stroke-width="4"/>
+
+    <path d="M122 646C213 781 351 772 426 660C493 560 563 557 638 665C712 771 854 775 928 657C993 554 1073 554 1146 659C1224 770 1362 770 1482 645" fill="none" stroke="#07100f" stroke-width="42"/>
+    <path d="M122 646C213 781 351 772 426 660C493 560 563 557 638 665C712 771 854 775 928 657C993 554 1073 554 1146 659C1224 770 1362 770 1482 645" fill="none" stroke="url(#panchi-bronze)" stroke-width="24"/>
+    <path d="M122 646C213 781 351 772 426 660C493 560 563 557 638 665C712 771 854 775 928 657C993 554 1073 554 1146 659C1224 770 1362 770 1482 645" fill="none" stroke="#e5cb8c88" stroke-width="4"/>
+
+    <path d="M171 504C264 386 359 388 448 501C535 611 625 614 714 505C804 395 895 394 986 502C1079 612 1174 615 1273 501C1340 424 1411 422 1483 494" fill="none" stroke="#07100f" stroke-width="36"/>
+    <path d="M171 504C264 386 359 388 448 501C535 611 625 614 714 505C804 395 895 394 986 502C1079 612 1174 615 1273 501C1340 424 1411 422 1483 494" fill="none" stroke="#568778" stroke-width="20"/>
+    <path d="M171 504C264 386 359 388 448 501C535 611 625 614 714 505C804 395 895 394 986 502C1079 612 1174 615 1273 501C1340 424 1411 422 1483 494" fill="none" stroke="#cbaa6c99" stroke-width="4" stroke-dasharray="18 10"/>
+  </g>
+
+  <g opacity="0.9" fill="none" stroke="#b9975f" stroke-width="8">
+    <path d="M214 323C236 357 236 391 212 424C190 454 190 480 214 506C240 535 240 566 214 596C190 624 192 658 216 692"/>
+    <path d="M468 318C492 352 492 388 468 420C444 454 444 484 470 512C494 540 494 571 468 604C444 635 446 665 472 696"/>
+    <path d="M730 319C754 353 754 388 730 420C706 454 706 484 732 513C758 542 758 571 732 604C708 635 710 666 734 696"/>
+    <path d="M994 319C1018 353 1018 388 994 420C970 454 970 484 996 513C1022 542 1022 571 996 604C972 635 974 666 998 696"/>
+    <path d="M1258 319C1282 353 1282 388 1258 420C1234 454 1234 484 1260 513C1286 542 1286 571 1260 604C1236 635 1238 666 1262 696"/>
+  </g>
+
+  <g>
+    <use href="#panchi-head" transform="translate(206 336) rotate(-18) scale(.72)"/>
+    <use href="#panchi-head" transform="translate(468 664) rotate(162) scale(.72)"/>
+    <use href="#panchi-head" transform="translate(732 337) rotate(-18) scale(.72)"/>
+    <use href="#panchi-head" transform="translate(996 663) rotate(162) scale(.72)"/>
+    <use href="#panchi-head" transform="translate(1260 338) rotate(-18) scale(.72)"/>
+    <use href="#panchi-head" transform="translate(342 504) rotate(8) scale(.62)"/>
+    <use href="#panchi-head" transform="translate(872 505) rotate(188) scale(.62)"/>
+    <use href="#panchi-head" transform="translate(1390 500) rotate(8) scale(.62)"/>
+  </g>
+
+  <g fill="#0b1815" stroke="#c8a96c" stroke-width="3">
+    <circle cx="448" cy="501" r="16"/><circle cx="714" cy="505" r="16"/>
+    <circle cx="986" cy="502" r="16"/><circle cx="1273" cy="501" r="16"/>
+  </g>
+  <g fill="#75a090">
+    <circle cx="448" cy="501" r="5"/><circle cx="714" cy="505" r="5"/>
+    <circle cx="986" cy="502" r="5"/><circle cx="1273" cy="501" r="5"/>
+  </g>
+
+  <g font-family="sans-serif" font-size="15" letter-spacing="2">
+    <path d="M88 892H148" stroke="#c7a66a" stroke-width="4"/>
+    <text x="164" y="898" fill="#b8ab92">主纹路径</text>
+    <circle cx="320" cy="892" r="8" fill="#6f998b" stroke="#d0b173" stroke-width="2"/>
+    <text x="340" y="898" fill="#b8ab92">交叠节点</text>
+    <path d="M500 892H560" stroke="#4e8579" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="576" y="898" fill="#b8ab92">结构轴线</text>
+    <text x="1512" y="898" fill="#857d6e" text-anchor="end">数字线稿 · 非馆藏实拍</text>
+  </g>
+</svg>

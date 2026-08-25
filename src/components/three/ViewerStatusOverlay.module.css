@@ -1,0 +1,58 @@
+.statusStack {
+  position: absolute;
+  z-index: 7;
+  top: var(--space-16);
+  left: var(--space-16);
+  display: grid;
+  max-width: min(80%, 34rem);
+  gap: var(--space-8);
+  pointer-events: none;
+}
+
+.status,
+.fullscreenError {
+  display: inline-flex;
+  width: fit-content;
+  gap: var(--space-8);
+  align-items: center;
+  min-height: 32px;
+  margin: 0;
+  padding: 6px var(--space-12);
+  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  background: rgb(7 16 15 / 78%);
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 25%, transparent);
+  border-radius: var(--radius-2);
+  backdrop-filter: blur(12px);
+}
+
+.status[data-viewer-status="missing"],
+.status[data-viewer-status="error"],
+.status[data-viewer-status="webgl"],
+.fullscreenError {
+  color: color-mix(in srgb, var(--color-gold) 72%, var(--color-text));
+  border-color: color-mix(in srgb, var(--color-bronze) 44%, transparent);
+}
+
+.ready {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.spinner {
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

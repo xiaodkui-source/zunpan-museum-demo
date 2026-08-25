@@ -1,0 +1,26 @@
+.skipLink {
+  position: fixed;
+  z-index: 100;
+  top: var(--space-12);
+  left: var(--space-16);
+  min-height: var(--touch-target);
+  padding: var(--space-8) var(--space-16);
+  color: var(--color-background);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.8;
+  text-decoration: none;
+  background: var(--color-gold);
+  border-radius: var(--radius-2);
+  transform: translateY(calc(-100% - var(--space-24)));
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.skipLink:focus-visible {
+  transform: translateY(0);
+}
+
+.main {
+  min-height: 100vh;
+  background: var(--color-background);
+}

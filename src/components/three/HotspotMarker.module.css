@@ -1,0 +1,64 @@
+.wrapper {
+  pointer-events: none;
+}
+
+.marker {
+  position: relative;
+  display: grid;
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
+  padding: 0;
+  place-items: center;
+  color: var(--color-background);
+  cursor: pointer;
+  pointer-events: auto;
+  background: color-mix(in srgb, var(--color-gold) 90%, white);
+  border: 1px solid rgb(231 221 200 / 74%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 7px rgb(199 166 106 / 9%),
+    0 8px 24px rgb(0 0 0 / 30%);
+  transition:
+    transform var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out);
+}
+
+.marker:hover {
+  background: var(--color-text);
+  transform: scale(1.06);
+}
+
+.index {
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + var(--space-12));
+  width: max-content;
+  max-width: 10rem;
+  padding: 5px var(--space-8);
+  color: var(--color-text);
+  font-size: 0.66rem;
+  font-weight: 650;
+  line-height: 1.4;
+  white-space: nowrap;
+  pointer-events: none;
+  background: rgb(7 16 15 / 82%);
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 26%, transparent);
+  border-radius: var(--radius-2);
+  opacity: 0;
+  transform: translate(-5px, -50%);
+  transition:
+    opacity var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.marker:hover .label,
+.marker:focus-visible .label {
+  opacity: 1;
+  transform: translate(0, -50%);
+}

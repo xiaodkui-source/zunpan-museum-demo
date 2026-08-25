@@ -1,0 +1,45 @@
+.heading {
+  width: min(100%, 760px);
+}
+
+.start {
+  margin-inline: 0;
+  text-align: start;
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-16);
+  color: var(--color-gold);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.08em;
+}
+
+.description {
+  max-width: 62ch;
+  margin: var(--space-24) 0 0;
+  color: var(--color-text-muted);
+  font-size: clamp(0.9375rem, 1.4vw, 1.0625rem);
+  line-height: 1.9;
+}
+
+.center .description {
+  margin-inline: auto;
+}

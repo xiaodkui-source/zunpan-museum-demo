@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="dragon-title dragon-desc">
+  <title id="dragon-title">龙蛇形立体装饰 · 数字纹样示意</title>
+  <desc id="dragon-desc">以纵向盘绕双线、构件节点与偏移投影表现龙蛇形立体关系的本地数字研究图。</desc>
+  <defs>
+    <linearGradient id="dragon-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06100e"/>
+      <stop offset="0.5" stop-color="#0c1b18"/>
+      <stop offset="1" stop-color="#07120f"/>
+    </linearGradient>
+    <linearGradient id="dragon-body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5b4730"/>
+      <stop offset="0.28" stop-color="#c5a263"/>
+      <stop offset="0.52" stop-color="#79a092"/>
+      <stop offset="0.76" stop-color="#d6b979"/>
+      <stop offset="1" stop-color="#654f34"/>
+    </linearGradient>
+    <radialGradient id="dragon-joint" cx="34%" cy="30%" r="72%">
+      <stop offset="0" stop-color="#ddc589"/>
+      <stop offset="0.46" stop-color="#628a7c"/>
+      <stop offset="1" stop-color="#18332d"/>
+    </radialGradient>
+    <pattern id="dragon-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#c7a66a18"/>
+      <path d="M40 0V80M0 40H80" fill="none" stroke="#4e857912"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#dragon-bg)"/>
+  <rect width="1600" height="1000" fill="url(#dragon-grid)"/>
+  <path d="M0 112H1600M0 916H1600" stroke="#a7834d55" stroke-width="2"/>
+  <text x="86" y="72" fill="#e3d4b7" font-family="serif" font-size="34" letter-spacing="5">龙蛇形立体装饰 · 数字纹样示意</text>
+  <text x="1514" y="72" fill="#6f998b" font-family="sans-serif" font-size="16" text-anchor="end" letter-spacing="3">盘绕 / 节点 / 立体投影</text>
+
+  <g fill="none">
+    <rect x="72" y="142" width="1456" height="714" stroke="#c3a36888" stroke-width="2"/>
+    <rect x="92" y="162" width="1416" height="674" stroke="#4e857966" stroke-width="2"/>
+    <path d="M800 180V820" stroke="#c7a66a44" stroke-dasharray="10 16"/>
+    <path d="M452 180V820M1148 180V820" stroke="#4e85792f" stroke-dasharray="5 15"/>
+    <ellipse cx="800" cy="786" rx="286" ry="45" stroke="#4e857966" stroke-width="3" stroke-dasharray="12 12"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M854 752C651 690 607 579 777 526C962 468 967 354 790 307C654 271 678 210 801 188" stroke="#02070699" stroke-width="76" transform="translate(34 24)"/>
+    <path d="M854 752C651 690 607 579 777 526C962 468 967 354 790 307C654 271 678 210 801 188" stroke="#07100f" stroke-width="70"/>
+    <path d="M854 752C651 690 607 579 777 526C962 468 967 354 790 307C654 271 678 210 801 188" stroke="url(#dragon-body)" stroke-width="48"/>
+    <path d="M854 752C651 690 607 579 777 526C962 468 967 354 790 307C654 271 678 210 801 188" stroke="#edd49a77" stroke-width="5"/>
+
+    <path d="M746 752C949 690 993 579 823 526C638 468 633 354 810 307C946 271 922 210 799 188" stroke="#02070688" stroke-width="68" transform="translate(28 22)"/>
+    <path d="M746 752C949 690 993 579 823 526C638 468 633 354 810 307C946 271 922 210 799 188" stroke="#07100f" stroke-width="62"/>
+    <path d="M746 752C949 690 993 579 823 526C638 468 633 354 810 307C946 271 922 210 799 188" stroke="#568779" stroke-width="40"/>
+    <path d="M746 752C949 690 993 579 823 526C638 468 633 354 810 307C946 271 922 210 799 188" stroke="#c9aa6c88" stroke-width="4"/>
+  </g>
+
+  <g fill="none" stroke="#9d7f4e" stroke-width="15" stroke-linecap="round">
+    <path d="M716 701C639 726 572 717 514 668C453 617 450 554 492 502"/>
+    <path d="M884 701C961 726 1028 717 1086 668C1147 617 1150 554 1108 502"/>
+    <path d="M698 365C607 342 544 365 500 430"/>
+    <path d="M902 365C993 342 1056 365 1100 430"/>
+  </g>
+  <g fill="none" stroke="#5a8a7a" stroke-width="7" stroke-linecap="round">
+    <path d="M716 701C639 726 572 717 514 668C453 617 450 554 492 502"/>
+    <path d="M884 701C961 726 1028 717 1086 668C1147 617 1150 554 1108 502"/>
+    <path d="M698 365C607 342 544 365 500 430"/>
+    <path d="M902 365C993 342 1056 365 1100 430"/>
+  </g>
+
+  <g>
+    <g transform="translate(800 188)">
+      <path d="M-54 14C-55-29-20-62 26-56C57-52 78-24 70 8C64 33 42 51 13 54C-20 57-53 43-54 14Z" fill="url(#dragon-joint)" stroke="#d5b675" stroke-width="6"/>
+      <path d="M-33-15C-15-37 20-39 43-19C25-14 8-4-3 12C-22 9-33-1-33-15Z" fill="#091713" stroke="#8f7146" stroke-width="4"/>
+      <path d="M-7 17C9 3 32 5 49 17C33 40 6 45-17 34Z" fill="none" stroke="#e0c784" stroke-width="5"/>
+      <circle cx="32" cy="-16" r="6" fill="#06100e" stroke="#f0d798" stroke-width="3"/>
+      <path d="M-42-29L-69-50M-26-44L-34-73M50-29L79-47" fill="none" stroke="#78a193" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(746 752) rotate(168) scale(.8)">
+      <path d="M-54 14C-55-29-20-62 26-56C57-52 78-24 70 8C64 33 42 51 13 54C-20 57-53 43-54 14Z" fill="url(#dragon-joint)" stroke="#d5b675" stroke-width="6"/>
+      <path d="M-33-15C-15-37 20-39 43-19C25-14 8-4-3 12C-22 9-33-1-33-15Z" fill="#091713" stroke="#8f7146" stroke-width="4"/>
+      <circle cx="32" cy="-16" r="6" fill="#06100e" stroke="#f0d798" stroke-width="3"/>
+    </g>
+  </g>
+
+  <g fill="url(#dragon-joint)" stroke="#d2b273" stroke-width="5">
+    <circle cx="777" cy="526" r="27"/>
+    <circle cx="823" cy="526" r="27"/>
+    <circle cx="790" cy="307" r="24"/>
+    <circle cx="810" cy="307" r="24"/>
+    <circle cx="698" cy="365" r="18"/>
+    <circle cx="902" cy="365" r="18"/>
+    <circle cx="716" cy="701" r="18"/>
+    <circle cx="884" cy="701" r="18"/>
+  </g>
+  <g fill="#07100f" stroke="#e3ca8a" stroke-width="3">
+    <circle cx="777" cy="526" r="8"/><circle cx="823" cy="526" r="8"/>
+    <circle cx="790" cy="307" r="7"/><circle cx="810" cy="307" r="7"/>
+    <circle cx="698" cy="365" r="5"/><circle cx="902" cy="365" r="5"/>
+    <circle cx="716" cy="701" r="5"/><circle cx="884" cy="701" r="5"/>
+  </g>
+
+  <g fill="none" stroke-width="3">
+    <path d="M1190 246C1298 282 1366 367 1378 476C1393 610 1317 726 1192 776" stroke="#c6a66766"/>
+    <path d="M1216 274C1303 310 1353 383 1360 478C1369 581 1313 679 1216 728" stroke="#4e857988" stroke-dasharray="12 12"/>
+    <path d="M410 246C302 282 234 367 222 476C207 610 283 726 408 776" stroke="#c6a66766"/>
+    <path d="M384 274C297 310 247 383 240 478C231 581 287 679 384 728" stroke="#4e857988" stroke-dasharray="12 12"/>
+  </g>
+
+  <g font-family="sans-serif" font-size="15" letter-spacing="2">
+    <path d="M88 892H148" stroke="#c7a66a" stroke-width="6"/>
+    <text x="164" y="898" fill="#b8ab92">主体盘绕线</text>
+    <path d="M338 892H398" stroke="#4e8579" stroke-width="6"/>
+    <text x="414" y="898" fill="#b8ab92">伴生构件线</text>
+    <circle cx="600" cy="892" r="9" fill="#527f71" stroke="#d2b273" stroke-width="3"/>
+    <text x="620" y="898" fill="#b8ab92">连接节点</text>
+    <path d="M782 892H842" stroke="#4e8579" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="858" y="898" fill="#b8ab92">立体投影</text>
+    <text x="1512" y="898" fill="#857d6e" text-anchor="end">数字线稿 · 非馆藏实拍</text>
+  </g>
+</svg>

@@ -1,0 +1,126 @@
+.footer {
+  position: relative;
+  padding: var(--space-72) var(--page-gutter) var(--space-32);
+  background: var(--color-background);
+}
+
+.footer::before {
+  position: absolute;
+  top: 0;
+  right: var(--page-gutter);
+  left: var(--page-gutter);
+  height: 1px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    var(--color-gold),
+    color-mix(in srgb, var(--color-patina) 62%, transparent),
+    transparent
+  );
+  opacity: 0.7;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.62fr) minmax(0, 1.38fr) auto;
+  gap: var(--space-48);
+  align-items: start;
+  width: min(100%, var(--content-max));
+  margin-inline: auto;
+}
+
+.identity p,
+.notes p,
+.copyright {
+  margin: 0;
+}
+
+.chineseTitle {
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
+
+.englishTitle {
+  max-width: 28ch;
+  margin-top: var(--space-12) !important;
+  color: var(--color-gold);
+  font-size: 0.63rem;
+  line-height: 1.7;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.notes {
+  display: grid;
+  gap: var(--space-16);
+  max-width: 68rem;
+}
+
+.notes p {
+  color: var(--color-text-muted);
+  font-size: 0.74rem;
+  line-height: 1.85;
+}
+
+.returnButton {
+  display: inline-flex;
+  min-height: var(--touch-target);
+  gap: var(--space-12);
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 var(--space-8);
+  color: var(--color-gold);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-gold) 52%, transparent);
+  cursor: pointer;
+}
+
+.returnButton svg {
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.returnButton:hover svg,
+.returnButton:focus-visible svg {
+  transform: translateY(-3px);
+}
+
+.copyright {
+  grid-column: 1 / -1;
+  padding-top: var(--space-24);
+  color: color-mix(in srgb, var(--color-text-muted) 68%, transparent);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  border-top: 1px solid color-mix(in srgb, var(--color-bronze) 15%, transparent);
+}
+
+@media (max-width: 720px) {
+  .footer {
+    padding-top: var(--space-48);
+  }
+
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-32);
+  }
+
+  .returnButton {
+    justify-self: start;
+  }
+
+  .copyright {
+    grid-column: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .returnButton svg {
+    transition: none;
+  }
+}

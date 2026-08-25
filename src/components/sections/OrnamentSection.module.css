@@ -1,0 +1,167 @@
+.ornaments {
+  padding-block: var(--space-128);
+  scroll-margin-top: var(--header-height);
+  background:
+    linear-gradient(180deg, rgb(7 16 15 / 16%), transparent 16%),
+    radial-gradient(circle at 84% 18%, rgb(78 133 121 / 7%), transparent 28%),
+    var(--color-surface-deep);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-bronze) 18%, transparent);
+}
+
+.inner {
+  width: min(100% - (var(--page-gutter) * 2), var(--content-max));
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(var(--space-16), 2.4vw, var(--space-32));
+  margin-top: var(--space-72);
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--color-surface) 84%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 28%, transparent);
+}
+
+.card::after {
+  position: absolute;
+  inset: auto var(--space-16) 0;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-standard) var(--ease-out);
+}
+
+.card:hover::after,
+.card:focus-within::after {
+  opacity: 0.7;
+}
+
+.mediaFrame {
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+  background: #07110f;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-bronze) 24%, transparent);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  transition: transform 500ms var(--ease-out);
+}
+
+.card:hover .image,
+.card:focus-within .image {
+  transform: scale(1.018);
+}
+
+.diagramLabel {
+  position: absolute;
+  top: var(--space-12);
+  left: var(--space-12);
+  padding: 5px var(--space-8);
+  color: var(--color-text);
+  font-size: 0.61rem;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  background: rgb(7 16 15 / 82%);
+  border: 1px solid color-mix(in srgb, var(--color-gold) 40%, transparent);
+}
+
+.index {
+  position: absolute;
+  right: var(--space-12);
+  bottom: -0.28em;
+  color: rgb(231 221 200 / 15%);
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 7vw, 7rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 400;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--space-24);
+}
+
+.cardTitle {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+
+.description {
+  margin: var(--space-16) 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  line-height: 1.85;
+}
+
+.detailButton {
+  display: inline-flex;
+  min-height: var(--touch-target);
+  gap: var(--space-12);
+  align-items: center;
+  margin-top: auto;
+  padding: var(--space-24) 0 0;
+  color: var(--color-gold);
+  font-size: 0.73rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-gold) 55%, transparent);
+  cursor: pointer;
+}
+
+.detailButton svg {
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.detailButton:hover svg,
+.detailButton:focus-visible svg {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 768px) {
+  .ornaments {
+    padding-block: var(--space-96);
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-32);
+    margin-top: var(--space-48);
+  }
+
+  .mediaFrame {
+    min-height: min(52svh, 440px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card::after,
+  .image,
+  .detailButton svg {
+    transition: none;
+  }
+}

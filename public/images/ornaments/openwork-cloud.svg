@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="cloud-title cloud-desc">
+  <title id="cloud-title">镂空卷云结构 · 数字纹样示意</title>
+  <desc id="cloud-desc">以层叠框架、卷云涡旋和深墨负空间构成的本地数字结构研究图。</desc>
+  <defs>
+    <linearGradient id="cloud-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06100e"/>
+      <stop offset="0.55" stop-color="#10201c"/>
+      <stop offset="1" stop-color="#071310"/>
+    </linearGradient>
+    <linearGradient id="cloud-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d6b873"/>
+      <stop offset="0.34" stop-color="#6a8f80"/>
+      <stop offset="0.62" stop-color="#b58e55"/>
+      <stop offset="1" stop-color="#d9c18a"/>
+    </linearGradient>
+    <pattern id="cloud-grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#c7a66a18"/>
+      <circle cx="0" cy="0" r="2" fill="#4e857944"/>
+    </pattern>
+    <g id="cloud-scroll">
+      <path d="M-150 20C-137-76-25-124 67-74C137-36 142 48 92 94C50 133-17 128-50 85C-78 50-62 4-24-12C7-25 42-8 49 24C55 50 33 73 8 69C-13 66-23 43-12 27" fill="none" stroke="#07100f" stroke-width="42" stroke-linecap="round"/>
+      <path d="M-150 20C-137-76-25-124 67-74C137-36 142 48 92 94C50 133-17 128-50 85C-78 50-62 4-24-12C7-25 42-8 49 24C55 50 33 73 8 69C-13 66-23 43-12 27" fill="none" stroke="url(#cloud-metal)" stroke-width="24" stroke-linecap="round"/>
+      <path d="M-150 20C-137-76-25-124 67-74C137-36 142 48 92 94C50 133-17 128-50 85C-78 50-62 4-24-12C7-25 42-8 49 24C55 50 33 73 8 69C-13 66-23 43-12 27" fill="none" stroke="#ead49688" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#cloud-bg)"/>
+  <rect width="1600" height="1000" fill="url(#cloud-grid)"/>
+  <path d="M0 112H1600M0 916H1600" stroke="#a7834d55" stroke-width="2"/>
+  <text x="86" y="72" fill="#e3d4b7" font-family="serif" font-size="34" letter-spacing="5">镂空卷云结构 · 数字纹样示意</text>
+  <text x="1514" y="72" fill="#6f998b" font-family="sans-serif" font-size="16" text-anchor="end" letter-spacing="3">正负空间 / 涡旋 / 层叠框架</text>
+
+  <g fill="none">
+    <rect x="72" y="142" width="1456" height="714" stroke="#c3a36888" stroke-width="2"/>
+    <rect x="92" y="162" width="1416" height="674" stroke="#4e857977" stroke-width="2"/>
+    <rect x="118" y="188" width="1364" height="622" stroke="#a8834d55" stroke-width="8"/>
+    <rect x="140" y="210" width="1320" height="578" stroke="#6c948566" stroke-width="3"/>
+    <path d="M152 500H1448M800 220V778" stroke="#c7a66a28" stroke-dasharray="8 16"/>
+  </g>
+
+  <g fill="#06110f" stroke="#8c7448" stroke-width="5">
+    <path d="M150 246H1450V318H1342L1300 278L1258 318H1086L1042 278L998 318H830L800 286L770 318H602L558 278L514 318H342L300 278L258 318H150Z"/>
+    <path d="M150 682H258L300 722L342 682H514L558 722L602 682H770L800 714L830 682H998L1042 722L1086 682H1258L1300 722L1342 682H1450V754H150Z"/>
+  </g>
+
+  <g opacity="0.95">
+    <use href="#cloud-scroll" transform="translate(310 418) scale(.78)"/>
+    <use href="#cloud-scroll" transform="translate(620 418) rotate(180) scale(.78)"/>
+    <use href="#cloud-scroll" transform="translate(900 418) scale(.78)"/>
+    <use href="#cloud-scroll" transform="translate(1210 418) rotate(180) scale(.78)"/>
+    <use href="#cloud-scroll" transform="translate(310 592) rotate(180) scale(.78)"/>
+    <use href="#cloud-scroll" transform="translate(620 592) scale(.78)"/>
+    <use href="#cloud-scroll" transform="translate(900 592) rotate(180) scale(.78)"/>
+    <use href="#cloud-scroll" transform="translate(1210 592) scale(.78)"/>
+  </g>
+
+  <g fill="#081411" stroke="#c1a064" stroke-width="10" stroke-linejoin="round">
+    <path d="M182 482L236 428L290 482L236 536Z"/>
+    <path d="M492 482L546 428L600 482L546 536Z"/>
+    <path d="M774 482L800 456L826 482L800 508Z"/>
+    <path d="M1000 482L1054 428L1108 482L1054 536Z"/>
+    <path d="M1310 482L1364 428L1418 482L1364 536Z"/>
+  </g>
+  <g fill="#527f71" stroke="#dbbf7c" stroke-width="3">
+    <circle cx="236" cy="482" r="12"/><circle cx="546" cy="482" r="12"/>
+    <circle cx="800" cy="482" r="9"/><circle cx="1054" cy="482" r="12"/>
+    <circle cx="1364" cy="482" r="12"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M178 638C242 602 296 604 350 644C408 687 466 685 522 642" stroke="#5c897b" stroke-width="14"/>
+    <path d="M522 642C583 600 643 601 700 646C761 693 836 692 896 645" stroke="#c2a163" stroke-width="14"/>
+    <path d="M896 645C954 601 1016 603 1074 644C1131 684 1191 686 1248 642C1301 601 1358 602 1424 639" stroke="#5c897b" stroke-width="14"/>
+    <path d="M178 362C242 398 296 396 350 356C408 313 466 315 522 358" stroke="#c2a163" stroke-width="14"/>
+    <path d="M522 358C583 400 643 399 700 354C761 307 836 308 896 355" stroke="#5c897b" stroke-width="14"/>
+    <path d="M896 355C954 399 1016 397 1074 356C1131 316 1191 314 1248 358C1301 399 1358 398 1424 361" stroke="#c2a163" stroke-width="14"/>
+  </g>
+
+  <g stroke="#d5b572" stroke-width="2" fill="none" opacity="0.65">
+    <path d="M172 230H1428M172 770H1428" stroke-dasharray="3 11"/>
+    <path d="M164 338H1436M164 662H1436" stroke-dasharray="2 13"/>
+    <circle cx="800" cy="500" r="222"/>
+    <circle cx="800" cy="500" r="250" stroke="#4e8579" stroke-dasharray="12 14"/>
+  </g>
+
+  <g font-family="sans-serif" font-size="15" letter-spacing="2">
+    <path d="M88 892H148" stroke="#c7a66a" stroke-width="4"/>
+    <text x="164" y="898" fill="#b8ab92">实体框架</text>
+    <rect x="320" y="884" width="18" height="18" fill="#06110f" stroke="#6f998b" stroke-width="2"/>
+    <text x="352" y="898" fill="#b8ab92">镂空负形</text>
+    <path d="M516 892C536 874 556 874 576 892C596 910 616 910 636 892" fill="none" stroke="#4e8579" stroke-width="4"/>
+    <text x="654" y="898" fill="#b8ab92">卷云涡旋</text>
+    <text x="1512" y="898" fill="#857d6e" text-anchor="end">数字线稿 · 非馆藏实拍</text>
+  </g>
+</svg>

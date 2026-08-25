@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="poster-title poster-description">
+  <title id="poster-title">曾侯乙尊盘数字结构示意</title>
+  <desc id="poster-description">暗色博物馆风格的上尊与下盘结构剪影，以青铜、铜锈绿和柔金色标注，不是文物实拍。</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050b0a"/>
+      <stop offset="0.52" stop-color="#0a1513"/>
+      <stop offset="1" stop-color="#111712"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#4e8579" stop-opacity="0.26"/>
+      <stop offset="0.48" stop-color="#315f57" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#07100f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#261d17"/>
+      <stop offset="0.22" stop-color="#6f5538"/>
+      <stop offset="0.48" stop-color="#33271d"/>
+      <stop offset="0.72" stop-color="#8f7048"/>
+      <stop offset="1" stop-color="#211915"/>
+    </linearGradient>
+    <linearGradient id="basin-bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b7a4f"/>
+      <stop offset="0.18" stop-color="#453526"/>
+      <stop offset="0.78" stop-color="#291f19"/>
+      <stop offset="1" stop-color="#17120f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f5638"/>
+      <stop offset="0.3" stop-color="#d0b477"/>
+      <stop offset="0.56" stop-color="#f0d99b"/>
+      <stop offset="0.82" stop-color="#a8834d"/>
+      <stop offset="1" stop-color="#5b452f"/>
+    </linearGradient>
+    <linearGradient id="patina" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#76aa9c"/>
+      <stop offset="0.5" stop-color="#3f7e72"/>
+      <stop offset="1" stop-color="#203f3a"/>
+    </linearGradient>
+    <pattern id="fine-grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#c7a66a" stroke-opacity="0.045" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.5" fill="#c7a66a" fill-opacity="0.12"/>
+    </pattern>
+    <filter id="object-shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="20" result="blur"/>
+      <feOffset dy="22" result="offset"/>
+      <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .72 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="vessel-clip">
+      <path d="M993 706c-3-24 3-43 22-58l-8-68c-74-30-106-98-82-168 12-36 40-63 66-86l-4-68c-54-16-94-51-120-102 71-38 273-38 344 0-26 51-66 86-120 102l-4 68c26 23 54 50 66 86 24 70-8 138-82 168l-8 68c19 15 25 34 22 58z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#background)"/>
+  <rect width="1600" height="1000" fill="url(#fine-grid)"/>
+  <ellipse cx="1065" cy="456" rx="520" ry="470" fill="url(#halo)"/>
+
+  <g fill="none" stroke="#c7a66a" stroke-opacity="0.2">
+    <path d="M64 132V64h68M1468 64h68v68M1536 868v68h-68M132 936H64v-68"/>
+    <rect x="86" y="86" width="1428" height="828" stroke-opacity="0.08"/>
+  </g>
+
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="126" y="154" fill="#c7a66a" font-size="16" font-weight="600" letter-spacing="7">DIGITAL MUSEUM STUDY</text>
+    <text x="126" y="201" fill="#e7ddc8" font-family="Songti SC, STSong, SimSun, serif" font-size="30" letter-spacing="8">曾侯乙尊盘</text>
+    <path d="M126 229H432" stroke="url(#gold)" stroke-width="2"/>
+
+    <text x="126" y="670" fill="#4e8579" font-size="15" font-weight="600" letter-spacing="4">ZENG HOU YI ZUN PAN</text>
+    <text x="126" y="747" fill="#e7ddc8" font-family="Songti SC, STSong, SimSun, serif" font-size="68" letter-spacing="12">数字结构示意</text>
+    <text x="130" y="800" fill="#aaa08d" font-size="18" letter-spacing="2">上尊与下盘的程序化形态参考</text>
+    <text x="130" y="837" fill="#6d776f" font-size="14" letter-spacing="2">非文物实拍 · NOT A PHOTOGRAPH</text>
+  </g>
+
+  <g filter="url(#object-shadow)">
+    <ellipse cx="1040" cy="869" rx="337" ry="58" fill="#000" fill-opacity="0.5"/>
+    <ellipse cx="1040" cy="858" rx="260" ry="31" fill="#4e8579" fill-opacity="0.12" filter="url(#soft-glow)"/>
+
+    <path d="M811 817c19-34 69-52 229-52s210 18 229 52l-20 53H831z" fill="url(#bronze)" stroke="#8f7048" stroke-width="2"/>
+    <ellipse cx="1040" cy="818" rx="229" ry="47" fill="#241c16" stroke="url(#gold)" stroke-width="5"/>
+    <path d="M678 707c30-27 130-43 362-43s332 16 362 43l-38 105c-54 32-168 48-324 48s-270-16-324-48z" fill="url(#basin-bronze)" stroke="#a8834d" stroke-width="3"/>
+    <ellipse cx="1040" cy="706" rx="362" ry="62" fill="#171714" stroke="url(#gold)" stroke-width="8"/>
+    <ellipse cx="1040" cy="706" rx="318" ry="44" fill="#233a34" fill-opacity="0.78" stroke="#4e8579" stroke-width="3"/>
+    <ellipse cx="1040" cy="706" rx="275" ry="30" fill="#0c1513" stroke="#8f7048" stroke-opacity="0.7" stroke-width="2"/>
+
+    <path d="M993 706c-3-24 3-43 22-58l-8-68c-74-30-106-98-82-168 12-36 40-63 66-86l-4-68c-54-16-94-51-120-102 71-38 273-38 344 0-26 51-66 86-120 102l-4 68c26 23 54 50 66 86 24 70-8 138-82 168l-8 68c19 15 25 34 22 58z" fill="url(#bronze)" stroke="url(#gold)" stroke-width="4"/>
+
+    <g clip-path="url(#vessel-clip)" fill="none">
+      <path d="M895 199c82 54 198 88 300 0M939 300c60 28 142 28 202 0M915 468c84-46 166-54 250 0M910 514c88-45 173-45 260 0M936 566c69-25 139-25 208 0" stroke="#c7a66a" stroke-opacity="0.7" stroke-width="7"/>
+      <path d="M892 225c94 46 200 46 294 0M929 487c74 42 148 42 222 0M948 586c61 24 123 24 184 0" stroke="#315f57" stroke-width="13" stroke-opacity="0.72"/>
+      <path d="M923 382c35 36 50 73 15 110m70-132c37 42 46 84 8 126m91-126c-37 42-46 84-8 126m91-104c-35 36-50 73-15 110" stroke="#b8985e" stroke-width="5" stroke-opacity="0.78"/>
+      <path d="M945 418c20-26 40-26 60 0s40 26 60 0 40-26 60 0 40 26 60 0" stroke="#76aa9c" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <ellipse cx="1039" cy="157" rx="172" ry="36" fill="#201814" stroke="url(#gold)" stroke-width="8"/>
+    <ellipse cx="1039" cy="157" rx="137" ry="22" fill="#08100f" stroke="#4e8579" stroke-width="3"/>
+    <ellipse cx="1040" cy="326" rx="53" ry="13" fill="none" stroke="#c7a66a" stroke-opacity="0.85" stroke-width="6"/>
+    <ellipse cx="1040" cy="648" rx="48" ry="13" fill="none" stroke="#4e8579" stroke-width="7"/>
+
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M927 405c-44-35-78-18-83 12 39-19 59 4 39 38 36 2 59-16 67-42" stroke="url(#patina)" stroke-width="11"/>
+      <path d="M1153 405c44-35 78-18 83 12-39-19-59 4-39 38-36 2-59-16-67-42" stroke="url(#patina)" stroke-width="11"/>
+      <path d="M925 489c-42 13-57 45-35 66 8-37 37-38 59-8 15-30 10-55-8-72" stroke="#a8834d" stroke-width="9"/>
+      <path d="M1155 489c42 13 57 45 35 66-8-37-37-38-59-8-15-30-10-55 8-72" stroke="#a8834d" stroke-width="9"/>
+    </g>
+
+    <g fill="#315f57" opacity="0.72">
+      <circle cx="951" cy="364" r="9"/><circle cx="1128" cy="381" r="13"/>
+      <circle cx="976" cy="532" r="14"/><circle cx="1092" cy="552" r="8"/>
+      <path d="M879 736c44 10 75 24 99 45-54-3-88-13-111-29z"/>
+      <path d="M1210 739c-36 9-66 23-89 42 49-2 82-12 105-27z"/>
+    </g>
+  </g>
+
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <g fill="none" stroke="#c7a66a" stroke-opacity="0.75">
+      <path d="M1260 254h151l25-25"/>
+      <circle cx="1260" cy="254" r="5" fill="#c7a66a"/>
+      <path d="M1367 712h80l22 22"/>
+      <circle cx="1367" cy="712" r="5" fill="#c7a66a"/>
+    </g>
+    <text x="1290" y="218" fill="#e7ddc8" font-size="21" letter-spacing="4">上尊</text>
+    <text x="1290" y="243" fill="#8d887b" font-size="12" letter-spacing="3">UPPER VESSEL</text>
+    <text x="1396" y="768" fill="#e7ddc8" font-size="21" letter-spacing="4">下盘</text>
+    <text x="1354" y="793" fill="#8d887b" font-size="12" letter-spacing="3">LOWER BASIN</text>
+  </g>
+
+  <g transform="translate(126 886)" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <circle cx="7" cy="-6" r="7" fill="#4e8579"/>
+    <text x="28" y="0" fill="#aaa08d" font-size="13" letter-spacing="2">青铜 / 铜锈 / 柔金 · BRONZE / PATINA / SOFT GOLD</text>
+  </g>
+</svg>

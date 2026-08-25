@@ -1,0 +1,71 @@
+.fallback {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: clamp(var(--space-24), 4vw, var(--space-48));
+  align-items: center;
+  width: 100%;
+  padding: clamp(var(--space-16), 3vw, var(--space-32));
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at 18% 24%, rgb(78 133 121 / 14%), transparent 38%),
+    linear-gradient(135deg, var(--color-surface-deep), var(--color-surface));
+  border: 1px solid color-mix(in srgb, var(--color-bronze) 34%, transparent);
+  border-radius: var(--radius-4);
+}
+
+.posterFrame {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  background: var(--color-background);
+  border: 1px solid color-mix(in srgb, var(--color-gold) 24%, transparent);
+  box-shadow: 0 24px 60px rgb(0 0 0 / 34%);
+}
+
+.posterFrame::after {
+  position: absolute;
+  inset: var(--space-12);
+  pointer-events: none;
+  content: "";
+  border: 1px solid color-mix(in srgb, var(--color-patina) 24%, transparent);
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+}
+
+.copy {
+  max-width: 40rem;
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-12);
+  color: var(--color-gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.description {
+  margin: var(--space-16) 0 0;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .fallback {
+    grid-template-columns: 1fr;
+  }
+}
