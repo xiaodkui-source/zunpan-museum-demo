@@ -52,10 +52,11 @@
 
 .title {
   max-width: 7em;
+  white-space: nowrap;
   margin: var(--space-24) 0 0;
   color: var(--color-text);
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 6.8vw, 7.4rem);
+  font-size: clamp(3rem, 6vw, 6rem);
   font-weight: 400;
   line-height: 0.98;
   letter-spacing: 0.08em;
@@ -284,7 +285,7 @@
   }
 
   .title {
-    font-size: clamp(3.1rem, 18vw, 5.2rem);
+    font-size: clamp(2.4rem, 15vw, 5rem);
   }
 
   .meta {
