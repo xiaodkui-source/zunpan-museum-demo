@@ -8,6 +8,27 @@ export interface WebGLFallbackProps {
   onUnavailable?: () => void;
 }
 
+const supportsWebGL = (): boolean => {
+  if (
+    typeof window === "undefined" ||
+    (!window.WebGLRenderingContext && !window.WebGL2RenderingContext)
+  ) {
+    return false;
+  }
+
+  try {
+    const canvas = document.createElement("canvas");
+    const context =
+      canvas.getContext("webgl2") ||
+      canvas.getContext("webgl") ||
+      canvas.getContext("experimental-webgl");
+
+    return Boolean(context);
+  } catch {
+    return false;
+  }
+};
+
 export function WebGLFallback({
   poster = "/images/zunpan-poster.svg",
   className,
@@ -18,7 +39,9 @@ export function WebGLFallback({
     : styles.fallback;
 
   useEffect(() => {
-    onUnavailable?.();
+    if (!supportsWebGL()) {
+      onUnavailable?.();
+    }
   }, [onUnavailable]);
 
   return (
